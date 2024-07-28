@@ -1,0 +1,341 @@
+lockfileVersion: '6.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+devDependencies:
+  '@types/minimist':
+    specifier: ^1.2.5
+    version: 1.2.5
+  '@types/node':
+    specifier: ^20.14.12
+    version: 20.14.12
+  minimist:
+    specifier: ^1.2.8
+    version: 1.2.8
+  typescript:
+    specifier: ^4.8.4
+    version: 4.9.5
+  vite:
+    specifier: ^3.2.3
+    version: 3.2.10(@types/node@20.14.12)
+
+packages:
+
+  /@esbuild/android-arm@0.15.18:
+    resolution: {integrity: sha1-Jm1AuP3Ph5Yt+K8Ft2IZvHhrT4A=, tarball: http://registry.m.jd.com/@esbuild/android-arm/download/@esbuild/android-arm-0.15.18.tgz}
+    engines: {node: '>=12'}
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /@esbuild/linux-loong64@0.15.18:
+    resolution: {integrity: sha1-Eot27Lm+SLYM9c/BxjpPAGkaMjk=, tarball: http://registry.m.jd.com/@esbuild/linux-loong64/download/@esbuild/linux-loong64-0.15.18.tgz}
+    engines: {node: '>=12'}
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /@types/minimist@1.2.5:
+    resolution: {integrity: sha1-7BB1XocUl7zYPv6SfkPsRujAdH4=, tarball: http://registry.m.jd.com/@types/minimist/download/@types/minimist-1.2.5.tgz}
+    dev: true
+
+  /@types/node@20.14.12:
+    resolution: {integrity: sha1-Ep18OoIstJ/H/2YSNfGc/v1CK0k=, tarball: http://registry.m.jd.com/@types/node/download/@types/node-20.14.12.tgz}
+    dependencies:
+      undici-types: 5.26.5
+    dev: true
+
+  /esbuild-android-64@0.15.18:
+    resolution: {integrity: sha1-IKeuFBbI6q3pF/skU8ElkwLGN6U=, tarball: http://registry.m.jd.com/esbuild-android-64/download/esbuild-android-64-0.15.18.tgz}
+    engines: {node: '>=12'}
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /esbuild-android-arm64@0.15.18:
+    resolution: {integrity: sha1-nMDsYFgdatJnVo8pz0iV/92fLwQ=, tarball: http://registry.m.jd.com/esbuild-android-arm64/download/esbuild-android-arm64-0.15.18.tgz}
+    engines: {node: '>=12'}
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /esbuild-darwin-64@0.15.18:
+    resolution: {integrity: sha1-Qo4XMOqBnVAICPIg+8UgeuptRBA=, tarball: http://registry.m.jd.com/esbuild-darwin-64/download/esbuild-darwin-64-0.15.18.tgz}
+    engines: {node: '>=12'}
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /esbuild-darwin-arm64@0.15.18:
+    resolution: {integrity: sha1-tt/HeZEVopF/NZcL+8k65QJWszc=, tarball: http://registry.m.jd.com/esbuild-darwin-arm64/download/esbuild-darwin-arm64-0.15.18.tgz}
+    engines: {node: '>=12'}
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /esbuild-freebsd-64@0.15.18:
+    resolution: {integrity: sha1-ThkNnC0eZxZGGa4wpDi+h9Xu2vI=, tarball: http://registry.m.jd.com/esbuild-freebsd-64/download/esbuild-freebsd-64-0.15.18.tgz}
+    engines: {node: '>=12'}
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /esbuild-freebsd-arm64@0.15.18:
+    resolution: {integrity: sha1-GKTANE7iO9Wm0G0Yx24v1tP5FjU=, tarball: http://registry.m.jd.com/esbuild-freebsd-arm64/download/esbuild-freebsd-arm64-0.15.18.tgz}
+    engines: {node: '>=12'}
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /esbuild-linux-32@0.15.18:
+    resolution: {integrity: sha1-mjKXMe4HmxImK3k/uE7qdi6C4M4=, tarball: http://registry.m.jd.com/esbuild-linux-32/download/esbuild-linux-32-0.15.18.tgz}
+    engines: {node: '>=12'}
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /esbuild-linux-64@0.15.18:
+    resolution: {integrity: sha1-Uyc4B1OXuZRGe1FOUkrrUgwZG2w=, tarball: http://registry.m.jd.com/esbuild-linux-64/download/esbuild-linux-64-0.15.18.tgz}
+    engines: {node: '>=12'}
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /esbuild-linux-arm64@0.15.18:
+    resolution: {integrity: sha1-U3LnmTrC2o8GsroxNxDXIreobl0=, tarball: http://registry.m.jd.com/esbuild-linux-arm64/download/esbuild-linux-arm64-0.15.18.tgz}
+    engines: {node: '>=12'}
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /esbuild-linux-arm@0.15.18:
+    resolution: {integrity: sha1-5zSq8lmi49EJ1IhsnoHsDy/Zqcw=, tarball: http://registry.m.jd.com/esbuild-linux-arm/download/esbuild-linux-arm-0.15.18.tgz}
+    engines: {node: '>=12'}
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /esbuild-linux-mips64le@0.15.18:
+    resolution: {integrity: sha1-wEh8FKk3GoTrCPqw4dewRadxBes=, tarball: http://registry.m.jd.com/esbuild-linux-mips64le/download/esbuild-linux-mips64le-0.15.18.tgz}
+    engines: {node: '>=12'}
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /esbuild-linux-ppc64le@0.15.18:
+    resolution: {integrity: sha1-rwSK2U7tDOMvbVqHP3q+kRUBJQc=, tarball: http://registry.m.jd.com/esbuild-linux-ppc64le/download/esbuild-linux-ppc64le-0.15.18.tgz}
+    engines: {node: '>=12'}
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /esbuild-linux-riscv64@0.15.18:
+    resolution: {integrity: sha1-Qj7U5ZJ713+EK9VmlyF49CTUVeY=, tarball: http://registry.m.jd.com/esbuild-linux-riscv64/download/esbuild-linux-riscv64-0.15.18.tgz}
+    engines: {node: '>=12'}
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /esbuild-linux-s390x@0.15.18:
+    resolution: {integrity: sha1-IdIeqpYqGDv7djEuWgHMWuSM6Os=, tarball: http://registry.m.jd.com/esbuild-linux-s390x/download/esbuild-linux-s390x-0.15.18.tgz}
+    engines: {node: '>=12'}
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /esbuild-netbsd-64@0.15.18:
+    resolution: {integrity: sha1-rnVoL2DQhWCx/pSCv+AXPlEQuZg=, tarball: http://registry.m.jd.com/esbuild-netbsd-64/download/esbuild-netbsd-64-0.15.18.tgz}
+    engines: {node: '>=12'}
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /esbuild-openbsd-64@0.15.18:
+    resolution: {integrity: sha1-eVkakKo7A+SGP5O+7A0rqyhT0Kg=, tarball: http://registry.m.jd.com/esbuild-openbsd-64/download/esbuild-openbsd-64-0.15.18.tgz}
+    engines: {node: '>=12'}
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /esbuild-sunos-64@0.15.18:
+    resolution: {integrity: sha1-/VKKpdpTdLfh6T0275sHw9/tKXE=, tarball: http://registry.m.jd.com/esbuild-sunos-64/download/esbuild-sunos-64-0.15.18.tgz}
+    engines: {node: '>=12'}
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /esbuild-windows-32@0.15.18:
+    resolution: {integrity: sha1-DpK2bs31Q1p2gTxLxczaBpb078M=, tarball: http://registry.m.jd.com/esbuild-windows-32/download/esbuild-windows-32-0.15.18.tgz}
+    engines: {node: '>=12'}
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /esbuild-windows-64@0.15.18:
+    resolution: {integrity: sha1-D8dh14VBQoT8QI55FCJtM/gkINA=, tarball: http://registry.m.jd.com/esbuild-windows-64/download/esbuild-windows-64-0.15.18.tgz}
+    engines: {node: '>=12'}
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /esbuild-windows-arm64@0.15.18:
+    resolution: {integrity: sha1-W1vcVtNB0JIu6UllyJ7hIKaobrc=, tarball: http://registry.m.jd.com/esbuild-windows-arm64/download/esbuild-windows-arm64-0.15.18.tgz}
+    engines: {node: '>=12'}
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /esbuild@0.15.18:
+    resolution: {integrity: sha1-6olK2vP7wDbTIyCgDU1uSXii820=, tarball: http://registry.m.jd.com/esbuild/download/esbuild-0.15.18.tgz}
+    engines: {node: '>=12'}
+    hasBin: true
+    requiresBuild: true
+    optionalDependencies:
+      '@esbuild/android-arm': 0.15.18
+      '@esbuild/linux-loong64': 0.15.18
+      esbuild-android-64: 0.15.18
+      esbuild-android-arm64: 0.15.18
+      esbuild-darwin-64: 0.15.18
+      esbuild-darwin-arm64: 0.15.18
+      esbuild-freebsd-64: 0.15.18
+      esbuild-freebsd-arm64: 0.15.18
+      esbuild-linux-32: 0.15.18
+      esbuild-linux-64: 0.15.18
+      esbuild-linux-arm: 0.15.18
+      esbuild-linux-arm64: 0.15.18
+      esbuild-linux-mips64le: 0.15.18
+      esbuild-linux-ppc64le: 0.15.18
+      esbuild-linux-riscv64: 0.15.18
+      esbuild-linux-s390x: 0.15.18
+      esbuild-netbsd-64: 0.15.18
+      esbuild-openbsd-64: 0.15.18
+      esbuild-sunos-64: 0.15.18
+      esbuild-windows-32: 0.15.18
+      esbuild-windows-64: 0.15.18
+      esbuild-windows-arm64: 0.15.18
+    dev: true
+
+  /fsevents@2.3.3:
+    resolution: {integrity: sha1-ysZAd4XQNnWipeGlMFxpezR9kNY=, tarball: http://registry.m.jd.com/fsevents/download/fsevents-2.3.3.tgz}
+    engines: {node: ^8.16.0 || ^10.6.0 || >=11.0.0}
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /function-bind@1.1.2:
+    resolution: {integrity: sha1-LALYZNl/PqbIgwxGTL0Rq26rehw=, tarball: http://registry.m.jd.com/function-bind/download/function-bind-1.1.2.tgz}
+    dev: true
+
+  /hasown@2.0.2:
+    resolution: {integrity: sha1-AD6vkb563DcuhOxZ3DclLO24AAM=, tarball: http://registry.m.jd.com/hasown/download/hasown-2.0.2.tgz}
+    engines: {node: '>= 0.4'}
+    dependencies:
+      function-bind: 1.1.2
+    dev: true
+
+  /is-core-module@2.15.0:
+    resolution: {integrity: sha1-cccuxUQqzn52swbp1I2zYfImmeo=, tarball: http://registry.m.jd.com/is-core-module/download/is-core-module-2.15.0.tgz}
+    engines: {node: '>= 0.4'}
+    dependencies:
+      hasown: 2.0.2
+    dev: true
+
+  /minimist@1.2.8:
+    resolution: {integrity: sha1-waRk52kzAuCCoHXO4MBXdBrEdyw=, tarball: http://registry.m.jd.com/minimist/download/minimist-1.2.8.tgz}
+    dev: true
+
+  /nanoid@3.3.7:
+    resolution: {integrity: sha1-0MMBppG8jVTvoKIibM8/4v1la9g=, tarball: http://registry.m.jd.com/nanoid/download/nanoid-3.3.7.tgz}
+    engines: {node: ^10 || ^12 || ^13.7 || ^14 || >=15.0.1}
+    hasBin: true
+    dev: true
+
+  /path-parse@1.0.7:
+    resolution: {integrity: sha1-+8EUtgykKzDZ2vWFjkvWi77bZzU=, tarball: http://registry.m.jd.com/path-parse/download/path-parse-1.0.7.tgz}
+    dev: true
+
+  /picocolors@1.0.1:
+    resolution: {integrity: sha1-qK1Xm1cZUvDl0liS3lRFvP4lqqE=, tarball: http://registry.m.jd.com/picocolors/download/picocolors-1.0.1.tgz}
+    dev: true
+
+  /postcss@8.4.40:
+    resolution: {integrity: sha1-64HypN12aO2Gmm2yWZngLprZCdg=, tarball: http://registry.m.jd.com/postcss/download/postcss-8.4.40.tgz}
+    engines: {node: ^10 || ^12 || >=14}
+    dependencies:
+      nanoid: 3.3.7
+      picocolors: 1.0.1
+      source-map-js: 1.2.0
+    dev: true
+
+  /resolve@1.22.8:
+    resolution: {integrity: sha1-tsh6nyqgbfq1Lj1wrIzeMh+lpI0=, tarball: http://registry.m.jd.com/resolve/download/resolve-1.22.8.tgz}
+    hasBin: true
+    dependencies:
+      is-core-module: 2.15.0
+      path-parse: 1.0.7
+      supports-preserve-symlinks-flag: 1.0.0
+    dev: true
+
+  /rollup@2.79.1:
+    resolution: {integrity: sha1-vt7o+u98n5OiZHrAEIdI9Jfwgcc=, tarball: http://registry.m.jd.com/rollup/download/rollup-2.79.1.tgz}
+    engines: {node: '>=10.0.0'}
+    hasBin: true
+    optionalDependencies:
+      fsevents: 2.3.3
+    dev: true
+
+  /source-map-js@1.2.0:
+    resolution: {integrity: sha1-FrgJwWJRe1uMPn3NMVoqXCYSsq8=, tarball: http://registry.m.jd.com/source-map-js/download/source-map-js-1.2.0.tgz}
+    engines: {node: '>=0.10.0'}
+    dev: true
+
+  /supports-preserve-symlinks-flag@1.0.0:
+    resolution: {integrity: sha1-btpL00SjyUrqN21MwxvHcxEDngk=, tarball: http://registry.m.jd.com/supports-preserve-symlinks-flag/download/supports-preserve-symlinks-flag-1.0.0.tgz}
+    engines: {node: '>= 0.4'}
+    dev: true
+
+  /typescript@4.9.5:
+    resolution: {integrity: sha1-CVl5+bzA0J2jJNWNA86Pg3TL5lo=, tarball: http://registry.m.jd.com/typescript/download/typescript-4.9.5.tgz}
+    engines: {node: '>=4.2.0'}
+    hasBin: true
+    dev: true
+
+  /undici-types@5.26.5:
+    resolution: {integrity: sha1-vNU5iT0AtW6WT9JlekhmsiGmVhc=, tarball: http://registry.m.jd.com/undici-types/download/undici-types-5.26.5.tgz}
+    dev: true
+
+  /vite@3.2.10(@types/node@20.14.12):
+    resolution: {integrity: sha1-esef6tgs+2tb9lYTzYL7ptzIE0A=, tarball: http://registry.m.jd.com/vite/download/vite-3.2.10.tgz}
+    engines: {node: ^14.18.0 || >=16.0.0}
+    hasBin: true
+    peerDependencies:
+      '@types/node': '>= 14'
+      less: '*'
+      sass: '*'
+      stylus: '*'
+      sugarss: '*'
+      terser: ^5.4.0
+    peerDependenciesMeta:
+      '@types/node':
+        optional: true
+      less:
+        optional: true
+      sass:
+        optional: true
+      stylus:
+        optional: true
+      sugarss:
+        optional: true
+      terser:
+        optional: true
+    dependencies:
+      '@types/node': 20.14.12
+      esbuild: 0.15.18
+      postcss: 8.4.40
+      resolve: 1.22.8
+      rollup: 2.79.1
+    optionalDependencies:
+      fsevents: 2.3.3
+    dev: true
