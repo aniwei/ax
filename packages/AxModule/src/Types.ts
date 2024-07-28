@@ -1,3 +1,5 @@
+import { InstructionId } from './Instructions'
+
 /// Wasm types
 export interface WasmHeader {
   magic: string
@@ -29,6 +31,16 @@ export enum ValueType {
 export interface FuncType {
   params: ValueType[]
   results: ValueType[]
+}
+
+export interface FuncLocal {
+  count: number,
+  value: ValueType,
+}
+
+export interface FuncBody {
+  locals: FuncLocal[],
+  code: InstructionId[],
 }
 
 export enum ExportDescriptionId {

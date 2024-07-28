@@ -1,5 +1,5 @@
 import { Reader } from './Reader'
-import { Export, FuncType, Limits, Memory, Table } from './Types'
+import { Export, FuncBody, FuncLocal, FuncType, Limits, Memory, Table } from './Types'
 
 export enum SectionId {
   Custom = 0x00,
@@ -150,6 +150,34 @@ export class CreateSection extends Reader {
     return exports  
   }
 
+  protected readCodeSection (): FuncBody[] {
+    const count = this.readUint32()
+    const bodies: FuncBody[] = []
+
+    for (let i = 0; i < count; i++) {
+      const size = this.readUint32()
+      const locals: FuncLocal[] = []
+
+      for (let j = 0; j < size; j++) {
+        const count = this.readUint32()
+        const value = this.readByte()
+
+        locals.push({ count, value })
+      }
+
+      const codeSize = this.readUint32()
+      const code: number[] = []
+
+      for (let j = 0; j < codeSize; j++) {
+        code.push(this.readByte())
+      }
+
+      bodies.push({ locals, code })
+    }
+
+    return bodies
+  }
+
   public create <T>(id: number): Section<T> {
     let section: Section<T> | null = null
 
@@ -171,6 +199,10 @@ export class CreateSection extends Reader {
 
       case SectionId.Export:
         section = new ExportSection(this.readExportSection()) as Section<T>
+        break
+
+      case SectionId.Code:
+        section = new CodeSection(this.readCodeSection()) as Section<T>
         break
     }
 
@@ -225,5 +257,11 @@ export class TableSection extends Section<Table[]> {
 export class ExportSection extends Section<Export[]> {
   constructor (payload: Export[]) {
     super(SectionId.Export, payload)
+  }
+}
+
+export class CodeSection extends Section<FuncBody[]> {
+  constructor (payload: FuncBody[]) {
+    super(SectionId.Code, payload)
   }
 }

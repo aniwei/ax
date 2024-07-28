@@ -1,5 +1,5 @@
 import { Reader } from './Reader'
-import { ExportSection, FuncSection, MemorySection, Section, SectionId, TableSection, TypeSection } from './Section'
+import { CodeSection, ExportSection, FuncSection, MemorySection, Section, SectionId, TableSection, TypeSection } from './Section'
 import type { WasmHeader } from './Types'
 
 export class CreateModule extends Reader {
@@ -99,6 +99,7 @@ export class Module {
   public memory: MemorySection | null = null
   public table: TableSection | null = null
   public export: ExportSection | null = null
+  public code: CodeSection | null = null
 
   constructor (magic: string, version: number) {
     this.magic = magic
