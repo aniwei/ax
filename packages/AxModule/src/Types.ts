@@ -1,4 +1,4 @@
-import { InstructionId } from './Instructions'
+import { Instruction, InstructionId } from './Instructions'
 
 /// Wasm types
 export interface WasmHeader {
@@ -40,7 +40,7 @@ export interface FuncLocal {
 
 export interface FuncBody {
   locals: FuncLocal[],
-  code: InstructionId[],
+  code: Instruction[],
 }
 
 export enum ExportDescriptionId {
@@ -58,4 +58,14 @@ export interface ExportDescription {
 export interface Export {
   name: string,
   description: ExportDescription,
+}
+
+export enum BlockId {
+  Empty,
+  Value,
+}
+
+export interface Block {
+  id: BlockId,
+  value?: ValueType[],
 }

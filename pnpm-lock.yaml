@@ -1,24 +1,31 @@
-lockfileVersion: '6.0'
+lockfileVersion: '9.0'
 
 settings:
   autoInstallPeers: true
   excludeLinksFromLockfile: false
 
-dependencies:
-  ax:
-    specifier: ^0.2.2
-    version: 0.2.2
+importers:
+
+  .:
+    dependencies:
+      ax:
+        specifier: ^0.2.2
+        version: 0.2.2
 
 packages:
 
-  /ax@0.2.2:
-    resolution: {integrity: sha1-kQE+PPslbmx0KPYEJdk67W+Ppco=, tarball: http://registry.m.jd.com/ax/download/ax-0.2.2.tgz}
-    dependencies:
-      sprintf: 0.1.5
-    dev: false
+  ax@0.2.2:
+    resolution: {integrity: sha512-i3Ht6d7QUoDEBj8LDGIYCEGHCk3xZwlX/08Wqae21xbKJjg96Z6ufxGwc0GYXtWVaLj5xUwvRukY/52me1ZRqQ==}
 
-  /sprintf@0.1.5:
-    resolution: {integrity: sha1-j4PjmpMXwaUCy324BQ5Rxnn27c8=, tarball: http://registry.m.jd.com/sprintf/download/sprintf-0.1.5.tgz}
+  sprintf@0.1.5:
+    resolution: {integrity: sha512-4X5KsuXFQ7f+d7Y+bi4qSb6eI+YoifDTGr0MQJXRoYO7BO7evfRCjds6kk3z7l5CiJYxgDN1x5Er4WiyCt+zTQ==}
     engines: {node: '>=0.2.4'}
     deprecated: The sprintf package is deprecated in favor of sprintf-js.
-    dev: false
+
+snapshots:
+
+  ax@0.2.2:
+    dependencies:
+      sprintf: 0.1.5
+
+  sprintf@0.1.5: {}
