@@ -1,4 +1,4 @@
-import { Instruction, InstructionId } from './Instructions'
+import { Instruction } from './Instructions'
 
 /// Wasm types
 export interface WasmHeader {
@@ -21,25 +21,25 @@ export interface Limits {
   max: number | null
 }
 
-export enum ValueType {
+export enum ValueId {
   I32, // 0x7F
   I64, // 0x7E
   F32, // 0x7D
   F64, // 0x7C
 }
 
-export interface FuncType {
-  params: ValueType[]
-  results: ValueType[]
+export interface Function {
+  params: ValueId[]
+  results: ValueId[]
 }
 
-export interface FuncLocal {
+export interface FunctionLocal {
   count: number,
-  value: ValueType,
+  value: ValueId,
 }
 
-export interface FuncBody {
-  locals: FuncLocal[],
+export interface FunctionBody {
+  locals: FunctionLocal[],
   code: Instruction[],
 }
 
@@ -61,11 +61,11 @@ export interface Export {
 }
 
 export enum BlockId {
-  Empty,
+  Empty = 0x40,
   Value,
 }
 
 export interface Block {
   id: BlockId,
-  value?: ValueType[],
+  value?: ValueId[],
 }

@@ -1,5 +1,5 @@
 import { Reader } from './Reader'
-import { CodeSection, ExportSection, FuncSection, MemorySection, Section, SectionId, TableSection, TypeSection } from './Section'
+import { CodeSection, ExportSection, FunctionSection, MemorySection, Section, SectionId, TableSection, TypeSection } from './Section'
 import type { WasmHeader } from './Types'
 
 export class CreateModule extends Reader {
@@ -64,7 +64,7 @@ export class CreateModule extends Reader {
           module.type = section as TypeSection
           break
         case SectionId.Function:
-          module.func = section as FuncSection
+          module.func = section as FunctionSection
           break
 
         case SectionId.Memory:
@@ -77,6 +77,10 @@ export class CreateModule extends Reader {
 
         case SectionId.Export:
           module.export = section as ExportSection
+          break
+
+        case SectionId.Code:
+          module.code = section as CodeSection
           break
       }
 
@@ -95,7 +99,7 @@ export class Module {
   protected version: number
 
   public type: TypeSection | null = null
-  public func: FuncSection | null = null
+  public func: FunctionSection | null = null
   public memory: MemorySection | null = null
   public table: TableSection | null = null
   public export: ExportSection | null = null

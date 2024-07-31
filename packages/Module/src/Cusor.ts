@@ -7,7 +7,11 @@ export class Cursor {
   }
 
   public get buffer(): Uint8Array {
-    return this.data.slice(0, this.position);
+    return this.data
+  }
+
+  public get byteLength(): number {
+    return this.data.byteLength
   }
 
   constructor(size: number)
